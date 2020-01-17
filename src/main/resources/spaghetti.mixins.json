@@ -1,11 +1,12 @@
 {
   "required": true,
-  "package": "net.fabricmc.example.mixin",
+  "package": "eu.xetoo.spaghetti.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
   ],
   "client": [
-    "ExampleMixin"
+    "MixinMinecraftClient",
+    "MixinPlayers"
   ],
   "injectors": {
     "defaultRequire": 1
