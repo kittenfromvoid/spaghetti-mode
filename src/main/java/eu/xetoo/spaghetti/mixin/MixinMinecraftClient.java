@@ -11,10 +11,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(MinecraftClient.class)
 public class MixinMinecraftClient {
-
-    @Shadow
-    public ClientWorld world;
-
+    
     @Inject(method = "tick()V", at = @At("RETURN"))
     private void onGameTick(CallbackInfo callbackInfo) {
         EventHandlerManager.INSTANCE.everyTick((MinecraftClient) (Object) this);

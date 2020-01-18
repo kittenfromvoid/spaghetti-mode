@@ -22,6 +22,9 @@
       }
     ]
   },
+  "mixins": [
+    "spaghetti.mixins.json"
+  ],
   "requires": {
     "fabric-language-kotlin": ">=1.3.50"
   },

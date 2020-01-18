@@ -1,5 +1,6 @@
 package eu.xetoo.spaghetti
 
+import eu.xetoo.spaghetti.event.handlers.PlayersTickHandler
 import net.fabricmc.api.ModInitializer
 import net.minecraft.item.BlockItem
 import net.minecraft.item.Item
@@ -15,6 +16,6 @@ object SpaghettiMod : ModInitializer {
 
 
     override fun onInitialize() {
-        
+        PlayersTickHandler().register()
     }
 }
