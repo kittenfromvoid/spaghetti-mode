@@ -8,8 +8,8 @@ class PlayersTickHandler : EventHandler {
     override val type: Event = Event.worldTick
 
     override fun run(minecraftClient: MinecraftClient) {
-        MinecraftClient.getInstance().world?.entities?.forEach {
+/*        MinecraftClient.getInstance().world?.entities?.forEach {
             println(it.entityName)
-        }
+        }*/
     }
 }

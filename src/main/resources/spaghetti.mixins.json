@@ -6,7 +6,8 @@
   ],
   "client": [
     "MixinMinecraftClient",
-    "MixinPlayers"
+    "MixinKeyboard",
+    "MixinGameRenderer"
   ],
   "injectors": {
     "defaultRequire": 1
